@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       991.98: {
         slidesPerView: "auto",
-        initialSlide: 2,
+        initialSlide: 1,
       },
     },
 
