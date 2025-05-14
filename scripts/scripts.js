@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerGroup: 1,
     loopAdditionalSlides: 0,
     initialSlide: 0,
+    grabCursor: true,
 
     breakpoints: {
       575.98: {
