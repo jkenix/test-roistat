@@ -4,6 +4,8 @@
 // Layout
 
 html {
+  cursor: url("/img/icons/cursor.svg"), auto;
+
   font-size: 1rem;
   scroll-behavior: smooth;
 
@@ -38,24 +40,8 @@ body {
 
   max-width: 100%;
 
-  @media (min-width: $xl) {
-    max-width: 1250px;
-  }
-
-  @media (max-width: $xl) {
-    max-width: 1140px;
-  }
-
-  @media (max-width: $lg) {
-    max-width: 960px;
-  }
-
-  @media (max-width: $md) {
-    max-width: 720px;
-  }
-
   @media (max-width: $sm) {
-    max-width: 540px;
+    width: auto;
     margin: 0 15px;
   }
 }
@@ -76,16 +62,17 @@ body {
 
 // Text
 .section-title {
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 100%;
-
-  text-align: center;
+  font-size: 2.625rem;
+  line-height: 130%;
+  text-align: left;
 
   @media (max-width: $lg) {
     font-size: 1.75rem;
-    font-weight: 600;
-    line-height: 120%;
+    line-height: normal;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 1.5rem;
   }
 }
 
@@ -195,17 +182,8 @@ a {
   text-decoration: none;
   color: $dark;
 
-  &:hover {
-    color: $link-hover;
-    text-decoration: underline;
-  }
-
-  &:active {
-    color: $link-pressed;
-  }
-
   &:focus-visible {
-    outline: 3px solid $dark;
+    outline: 3px solid $ultramarin-base;
   }
 }
 
@@ -226,12 +204,8 @@ img {
 
 // Swiper
 
-.slider {
-  overflow: hidden;
-}
-
 .swiper-slide {
-  width: auto;
+  animation: toggle-opacity 0.4s ease-in 0s 1 forwards;
   pointer-events: all;
 }
 
@@ -239,10 +213,6 @@ img {
   transition-timing-function: linear;
 }
 
-.wrapper .header__tools-item {
-  width: 160px;
-}
-
-.wrapper .header__tools-item--txt {
-  width: 961px !important;
+.wrapper .services__content {
+  padding: 0 15px;
 }

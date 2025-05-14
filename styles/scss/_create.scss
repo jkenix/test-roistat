@@ -1,0 +1,71 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.create {
+  position: relative;
+
+  .create__item {
+    display: flex;
+  }
+
+  &__inner {
+    padding: 29px 0 29px 122px;
+
+    margin-top: 160px;
+
+    overflow: hidden;
+    width: 100%;
+
+    @media (max-width: $lg) {
+      padding: 16px 0;
+    }
+  }
+
+  &__content {
+  }
+
+  &__list {
+  }
+
+  &__item {
+    visibility: visible;
+
+    max-width: max-content;
+
+    span {
+      color: $white;
+      display: flex;
+
+      font-style: italic;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 130%;
+      text-align: left;
+
+      max-width: inherit;
+
+      @media (max-width: $lg) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  &__item--number {
+    span {
+      color: $ultramarin-base;
+    }
+
+    @media (min-width: $lg) {
+      max-width: 100%;
+
+      width: 665px !important;
+    }
+  }
+
+  &__reader-desc {
+    display: block;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}

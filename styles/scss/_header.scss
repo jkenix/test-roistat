@@ -5,7 +5,7 @@
   position: relative;
 
   &__inner {
-    padding: 37px 0 27px 34px;
+    padding: 37px 0 33px 34px;
 
     overflow: hidden;
     width: 100%;
@@ -24,18 +24,26 @@
   &__tools-item {
     visibility: visible;
 
-    &:focus-visible {
-      border: 2px solid red;
-    }
+    max-width: 160px;
   }
 
-  &__tools-item--txt span {
-    color: $ultramarin-base;
+  &__tools-item--txt {
+    @media (min-width: $lg) {
+      max-width: 961px;
 
-    font-style: italic;
-    font-size: 3rem;
-    line-height: 130%;
-    text-align: left;
+      span {
+        color: $ultramarin-base;
+
+        font-style: italic;
+        font-size: 3rem;
+        line-height: 130%;
+        text-align: left;
+
+        @media (max-width: $lg) {
+          font-size: 1.25rem;
+        }
+      }
+    }
   }
 
   &__reader-desc {
