@@ -51,46 +51,54 @@
         }
 
         &::before {
-          background: url("/img/icons/visit-arrow.svg") no-repeat;
-          content: "";
-          display: block;
-
-          position: absolute;
-          width: 147.5px;
-          height: 48px;
-          left: auto;
-          right: 14px;
-          top: 50px;
-          bottom: 0;
-
           animation: toggle-opacity 0.1s ease-in 0s 1 forwards;
+          display: block;
         }
 
         &::after {
-          content: "На страницу";
-          display: block;
-
-          color: $white;
-          font-size: 0.938rem;
-          font-weight: 400;
-          line-height: 130%;
-          text-align: left;
-          text-transform: uppercase;
-
-          position: absolute;
-          width: 147.5px;
-          height: 48px;
-          left: auto;
-          right: 15px;
-          top: 40px;
-          bottom: 0;
-
           animation: toggle-opacity 0.1s ease-in 0s 1 forwards;
+          display: block;
         }
 
         .services__item::before {
           color: $ultramarin-base;
         }
+      }
+
+      &::before {
+        background: url("/img/icons/visit-arrow.svg") no-repeat;
+        content: "";
+        display: none;
+
+        width: 147.5px;
+        height: 48px;
+
+        position: absolute;
+        left: auto;
+        right: 14px;
+        top: 50px;
+        bottom: 0;
+      }
+
+      &::after {
+        content: "На страницу";
+        display: none;
+
+        color: $white;
+        font-size: 0.938rem;
+        font-weight: 400;
+        line-height: 130%;
+        text-align: left;
+        text-transform: uppercase;
+
+        width: 147.5px;
+        height: 48px;
+
+        position: absolute;
+        left: auto;
+        right: 15px;
+        top: 40px;
+        bottom: 0;
       }
     }
 
@@ -167,12 +175,12 @@
   }
 
   &__item {
+    display: flex;
+    gap: 5px;
     color: $gray-2;
 
     font-size: 1.375rem;
-    font-weight: 400;
     line-height: 130%;
-    letter-spacing: 0%;
     text-align: left;
 
     &::before {
