@@ -1,0 +1,45 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.header {
+  position: relative;
+
+  &__inner {
+    padding: 37px 0 27px 34px;
+
+    overflow: hidden;
+    width: 100%;
+
+    @media (max-width: $md) {
+      padding: 16px 32px;
+      border: 0.5px solid rgb(217, 217, 217);
+    }
+
+    @media (max-width: $sm) {
+      padding: 16px 8px 16px 5px;
+    }
+  }
+
+  &__content {
+  }
+
+  &__tools-list {
+  }
+
+  &__tools-item {
+    visibility: visible;
+    
+    &:focus-visible {
+      border: 2px solid red;
+    }
+  }
+
+  &__tools-item--txt span {
+    color: $ultramarin-base;
+
+    font-style: italic;
+    font-size: 3rem;
+    line-height: 130%;
+    text-align: left;
+  }
+}
