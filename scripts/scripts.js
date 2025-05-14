@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     centeredSlides: true,
     slidesPerGroup: 1,
     loopAdditionalSlides: 0,
-    initialSlide: 3,
+    initialSlide: 0,
 
     autoplay: {
       delay: 1,
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     breakpoints: {
       991.98: {
-        initialSlide: 0,
+        initialSlide: 1,
       },
     },
 
