@@ -27,6 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 5.9,
       },
     },
+
+    // Добавляем обработчик события slideChange
+    on: {
+      slideChange: function () {
+        // Убираем aria-label со всех слайдов (Чтобы диктор не озвучивал номер слайда)
+        const slides = this.slides; // Получаем все слайды
+        slides.forEach((slide) => {
+          slide.removeAttribute("aria-label"); // Удаляем атрибут aria-label
+        });
+      },
+    },
   });
 
   // Обеспечиваем переход к первому слайду
