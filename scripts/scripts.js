@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   var HeaderItemsList = new Swiper(".header__content", {
     slidesPerView: "auto",
     spaceBetween: 36,
-    speed: 3000,
+    speed: 6000,
     loop: true,
     keyboard: false,
     allowTouchMove: false,
