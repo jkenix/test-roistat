@@ -25,10 +25,6 @@ body {
 
   padding: 0;
   margin: 0;
-
-  .fancybox__backdrop {
-    background-color: $body-bg-color;
-  }
 }
 
 .container {
@@ -128,47 +124,6 @@ ul {
   }
 }
 
-// button,
-// input,
-// select,
-// optgroup,
-// textarea {
-//   font-family: $main-font;
-//   margin: 0;
-//   font-size: 100%;
-//   line-height: 1.15;
-
-//   overflow: visible;
-
-//   &:focus-visible {
-//     outline: 1px solid $dark;
-//   }
-// }
-
-// button,
-// select {
-//   text-transform: none;
-// }
-
-// select,
-// input {
-//   outline: none;
-// }
-
-// button,
-// html input[type="button"],
-// input[type="reset"],
-// input[type="submit"] {
-//   cursor: pointer;
-// }
-
-// button,
-// [type="button"],
-// [type="reset"],
-// [type="submit"] {
-//   appearance: button;
-// }
-
 hr,
 img {
   border: none;
@@ -189,15 +144,6 @@ a {
 
 // Img
 
-.img-responsive {
-  width: auto;
-  margin: 0 auto;
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 img {
   border-style: none;
 }
@@ -214,5 +160,7 @@ img {
 }
 
 .wrapper .services__content {
-  padding: 0 15px;
+  @media (max-width: $sm) {
+    padding: 0 15px;
+  }
 }
