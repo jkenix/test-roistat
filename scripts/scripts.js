@@ -11,8 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     navigation: false,
 
     centeredSlides: true,
-    slidesPerGroup: 1,
-    loopAdditionalSlides: 0,
+    loopedSlidesLimit: null,
+    slidesPerView: "auto",
+    loopAdditionalSlides: "auto",
     initialSlide: 0,
 
     autoplay: {
@@ -70,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
     navigation: false,
 
     centeredSlides: false,
-    slidesPerGroup: 1,
     loopAdditionalSlides: 0,
     initialSlide: 0,
 
@@ -102,8 +102,9 @@ document.addEventListener("DOMContentLoaded", () => {
     navigation: false,
 
     centeredSlides: true,
-    slidesPerGroup: 1,
-    loopAdditionalSlides: 0,
+    loopedSlidesLimit: null,
+    slidesPerView: "auto",
+    loopAdditionalSlides: "auto",
     initialSlide: 0,
 
     autoplay: {
